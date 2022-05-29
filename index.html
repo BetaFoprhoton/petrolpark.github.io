@@ -3,14 +3,168 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon/favicon-32x32.png">
+    <link rel="icon" href="assets/img/favicon/32x32.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
     <title>Petrolpark</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <nav id="page-header" class="navbar navbar-light bg-light sticky-top">
+      <a class="navbar-brand p-3" href="#">
+        <img src="assets/img/title/petrolpark.png" alt="petrolpark" height="50px">
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="btn btn-outline-secondary mx-1" href="#" role="button">Welcome</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-secondary mx-1" href="#projects" role="button">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-secondary mx-1" href="#archive" role="button">Archive</a>
+        </li>
+      </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#page-header" data-offset="0">
+      <br>
+      <div class="container align-items-center">
+        <!--Welcome Block-->
+        <div class="border-bottom m-3 p-3">
+          <img class="mx-auto d-block" src="assets/img/title/welcome.png" height="100px">
+          <br>
+          <p class="text-justify">Welcome to my website. This servers a hub and hosting platform for my various bits and pieces. I'll probably put more in this section at some point.</p>
+        </div>
+        <!--Projects Block-->
+        <div class="border-bottom m-3 p-3">
+          <img id="projects" class="mx-auto d-block" src="assets/img/title/projects.png" height="100px">
+          <br>
+          <p class="text-justify">Below find all projects I have been or am currently working on.</p>
+          <div>
+            <!--Cubane-->
+            <div class="card m-3">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img class="img-fluid" src="assets/img/project/Cubane.png">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Synthesis of Cubane</h5>
+                    <h6 class="card-subtitle text-muted">
+                      <i class="bi bi-circle" style="color:limegreen"></i>
+                      Complete
+                    </h6>
+                    <p class="card-text">An article aimed at A-Level students about the synthesis of everybody's favourite chemical.</p>
+                    <a class="btn btn-outline-secondary" href="assets/file/Man, I Love Cubane 2022-05-29.pdf">Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Pate's SensorLab-->
+            <div class="card m-3">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img class="img-fluid" src="assets/img/project/PatesSensorLab.png">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pate's SensorLab</h5>
+                    <h6 class="card-subtitle text-muted">
+                      <i class="bi bi-circle" style="color:orange"></i>
+                      Ongoing
+                    </h6>
+                    <p class="card-text">A rework of the Physics Department's measurement instruments for mechanics practicals.</p>
+                    <a class="btn btn-outline-secondary" href="#">View Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Chess Two-->
+            <div class="card m-3">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img class="img-fluid" src="assets/img/project/ChessTwo.png">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Chess Two</h5>
+                    <h6 class="card-subtitle text-muted">
+                      <i class="bi bi-circle" style="color:orange"></i>
+                      Ongoing
+                    </h6>
+                    <p class="card-text">A verstaile Chess Engine I'm working on for my EPQ.</p>
+                    <a class="btn btn-outline-secondary" href="#">View Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Inferdle-->
+            <div class="card m-3">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img class="img-fluid" src="assets/img/project/Inferdle.png">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Inferdle</h5>
+                    <h6 class="card-subtitle text-muted">
+                      <i class="bi bi-circle" style="color:orange"></i>
+                      Ongoing
+                    </h6>
+                    <p class="card-text">A Wordle clone in which in addition to guessing the word, one must guess the rules of the game itself.</p>
+                    <a class="btn btn-outline-secondary" href="#">Go There</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Petrolpark YT-->
+            <div class="card m-3">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img class="img-fluid" src="assets/img/project/Petrolpark.png">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Petrolpark (YouTube Channel)</h5>
+                    <h6 class="card-subtitle text-muted">
+                      <i class="bi bi-circle" style="color:red"></i>
+                      Abandoned
+                    </h6>
+                    <p class="card-text">A YouTube channel for various silly nonsense.</p>
+                    <a class="btn btn-outline-secondary" href="#">Go There</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Club Penguin thing-->
+            <div class="card m-3">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img class="img-fluid" src="assets/img/project/EP4.png">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">EP4</h5>
+                    <h6 class="card-subtitle text-muted">
+                      <i class="bi bi-circle" style="color:red"></i>
+                      Postponed
+                    </h6>
+                    <p class="card-text">A Club Penguin remake built from the ground up.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Archive Block-->
+        <div class="border-bottom m-3 p-3">
+          <img id="archive" class="mx-auto d-block" src="assets/img/title/archive.png" height="100px">
+          <br>
+          <p class="text-justify">I'm still building this bit. Come back soon!</p>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
